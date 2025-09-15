@@ -212,6 +212,22 @@
             color: var(--text-primary);
         }
 
+        /* --- Journey Timeline --- */
+        .timeline { position: relative; max-width: 800px; margin: 0 auto; }
+        .timeline::after { content: ''; position: absolute; width: 3px; background-color: var(--border-color); top: 0; bottom: 0; left: 50%; margin-left: -1.5px; }
+        .timeline-item { padding: 10px 40px; position: relative; width: 50%; }
+        .timeline-item.left { left: 0; text-align: right; }
+        .timeline-item.right { left: 50%; }
+        .timeline-item::after { content: ''; position: absolute; width: 18px; height: 18px; background-color: var(--bg-dark); border: 4px solid var(--accent-color); top: 25px; border-radius: 50%; z-index: 1; transition: transform 0.3s ease; }
+        .timeline-item:hover::after { transform: scale(1.2); }
+        .timeline-item.left::after { right: -11px; }
+        .timeline-item.right::after { left: -11px; }
+        .timeline-content { padding: 20px; background-color: var(--bg-medium); border-radius: 6px; border: 1px solid var(--border-color); }
+        .timeline-content h3 { margin-top: 0; font-size: 1.2rem; }
+        .timeline-content p { color: var(--text-secondary); margin: 0.5rem 0 0; }
+        .timeline-content em { color: var(--accent-hover); font-style: normal; }
+
+
         /* --- Projects Section - Polished Cards --- */
         .projects-grid {
             display: grid;
@@ -361,12 +377,12 @@
 
     <header id="hero">
         <div class="container hero-content">
-            <img src="IMG_1661.jpg" alt="Profile picture of Padala Sahaja Reddy">
+            <img src="c:\Users\Z0053S5J\Desktop\portfolio\IMG_1661.JPEG" alt="Profile picture of Padala Sahaja Reddy">
             <h1>Hi, I'm Sahaja Reddy</h1>
             <p>A Digital Marketing Specialist passionate about building brands and driving growth through creative, data-driven strategies.</p>
             <div>
                 <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="Resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+                <a href="c:\Users\Z0053S5J\Desktop\portfolio\Resume.pdf" class="btn btn-secondary" download>Download Resume</a>
             </div>
         </div>
     </header>
@@ -375,7 +391,36 @@
         <section id="about">
             <div class="container">
                 <h2>About Me</h2>
-                <p>I am a strategic thinker who transforms marketing challenges into growth opportunities. My experience spans the full digital ecosystem, from developing <strong>360° marketing blueprints</strong> to optimizing campaigns with <strong>Google Analytics</strong>[cite: 41, 47]. I specialize in integrating SEO, paid advertising, and social media to build a powerful online presence[cite: 44, 66]. My involvement in initiatives like the <strong>NSS</strong> and <strong>NAF</strong> has honed my communication and leadership skills, and I'm eager to apply this unique blend of analytical and creative talent to a forward-thinking brand.</p>
+                <p>I am a strategic thinker who transforms marketing challenges into growth opportunities. My experience spans the full digital ecosystem, from developing <strong>360° marketing blueprints</strong> to optimizing campaigns with <strong>Google Analytics</strong>. I specialize in integrating SEO, paid advertising, and social media to build a powerful online presence. My involvement in initiatives like the <strong>NSS</strong> and <strong>NAF</strong> has honed my communication and leadership skills, and I'm eager to apply this unique blend of analytical and creative talent to a forward-thinking brand.</p>
+            </div>
+        </section>
+
+        <section id="journey">
+            <div class="container">
+                <h2>My Journey</h2>
+                <div class="timeline">
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <h3>Master of Arts, Political Science </h3>
+                            <p>Indira Gandhi National Open University </p>
+                            <em>2023 - 2025 </em>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3>Digital Marketing Specialization</h3>
+                            <p>Completed 8 certifications from Internshala covering SEO, SEM, Analytics, Social Media, and more. </p>
+                            <em>Apr 2025 - Sep 2025 </em>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <h3>Bachelor of Arts, Political Science </h3>
+                            <p>University of Delhi </p>
+                            <em>2018 - 2021 </em>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -385,21 +430,21 @@
                 <div class="projects-grid">
                     <div class="project-card">
                         <h3>360° Digital Marketing Blueprint</h3>
-                        <p>Developed a complete marketing strategy, creating brand assets and integrating SEO, Google Ads, SMO, and Email Marketing to boost online visibility and ROI[cite: 43, 44, 45].</p>
+                        <p>Developed a complete marketing strategy, creating brand assets and integrating SEO, Google Ads, SMO, and Email Marketing to boost online visibility and ROI.</p>
                         <div class="project-tags">
                             <span>Strategy</span> <span>SEO</span> <span>Google Ads</span> <span>Email Marketing</span>
                         </div>
                     </div>
                     <div class="project-card">
                         <h3>Google Analytics: Sales Insights</h3>
-                        <p>Analyzed sales data to project user growth and identify underperforming products, providing actionable recommendations to improve sales performance[cite: 48, 49, 51].</p>
+                        <p>Analyzed sales data to project user growth and identify underperforming products, providing actionable recommendations to improve sales performance.</p>
                         <div class="project-tags">
                              <span>Analytics</span> <span>ROI</span> <span>Data-Driven Strategy</span>
                         </div>
                     </div>
                     <div class="project-card">
                         <h3>Social Media & Influencer Plan</h3>
-                        <p>Designed a comprehensive social media strategy, allocating budget across organic, paid, and influencer marketing to maximize brand reach and engagement[cite: 55, 56].</p>
+                        <p>Designed a comprehensive social media strategy, allocating budget across organic, paid, and influencer marketing to maximize brand reach and engagement.</p>
                          <div class="project-tags">
                             <span>Social Media</span> <span>Influencer Marketing</span> <span>Budgeting</span>
                         </div>
@@ -413,19 +458,19 @@
                  <h2>My Toolkit</h2>
                  <h3>Marketing Strategy</h3>
                  <div class="skills-pills">
-                    <span class="skill-pill">Digital Marketing [cite: 87]</span>
-                    <span class="skill-pill">Search Engine Optimization (SEO) [cite: 88]</span>
-                    <span class="skill-pill">Search Engine Marketing (SEM) [cite: 31]</span>
-                    <span class="skill-pill">Social Media Optimization (SMO) [cite: 76]</span>
-                    <span class="skill-pill">Email Marketing [cite: 89]</span>
+                    <span class="skill-pill">Digital Marketing </span>
+                    <span class="skill-pill">Search Engine Optimization (SEO) </span>
+                    <span class="skill-pill">Search Engine Marketing (SEM) </span>
+                    <span class="skill-pill">Social Media Optimization (SMO)</span>
+                    <span class="skill-pill">Email Marketing</span>
                  </div>
                  <h3>Analytics & Creative</h3>
                   <div class="skills-pills">
-                    <span class="skill-pill">Google Analytics [cite: 15]</span>
-                    <span class="skill-pill">Ad Copywriting [cite: 61]</span>
-                    <span class="skill-pill">Video Editing [cite: 85]</span>
-                    <span class="skill-pill">Photography [cite: 85]</span>
-                    <span class="skill-pill">ROI Analysis [cite: 46]</span>
+                    <span class="skill-pill">Google Analytics </span>
+                    <span class="skill-pill">Ad Copywriting </span>
+                    <span class="skill-pill">Video Editing </span>
+                    <span class="skill-pill">Photography </span>
+                    <span class="skill-pill">ROI Analysis </span>
                  </div>
             </div>
         </section>
